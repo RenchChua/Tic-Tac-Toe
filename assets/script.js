@@ -109,14 +109,9 @@ function checkDiagWins(board){
 }
 
 function checkWin(board){
-  if(checkRowWin(board)){
-    return true;
-  }else if(checkColWin(board)){
-    return true;
-  }else if(checkDiagWins(board)){
+  if(checkRowWin(board) || checkColWin(board) || checkDiagWins(board)){
     return true;
   }
-
 }
 
 function onHover(turnsPlayed){
