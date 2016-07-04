@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> "Rencheng's Tic Tac Toe Game"</title>
+  <link rel="stylesheet" href="./assets/stylesheet.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="game-title">
+      <h1>Awesome Tic Tac Toe</h1>
+    </div>
+  </header>
+  <main>
+    <!-- setting up the gameboard -->
+    <div class="gameboard-container">
+      <div class=" text-centered gameboard">
+        <!-- this is the top row of the board -->
+        <div id="top-left" class="square text-cetered centered box-left">
+          <div class="player1 space" id="00">
+          </div>
+        </div>
+        <div id="top-center" class="square text-cetered centered box-center">
+          <div class="player1 space" id="01">
+          </div>
+        </div>
+        <div id="top-right" class="square text-cetered centered box-right">
+          <div class="player1 space" id="02">
+          </div>
+        </div>
+        <!-- this is the second row of the board -->
+        <div id="center-left" class="square text-cetered centered  box-left">
+          <div class="player1 space" id="10">
+          </div>
+        </div>
+        <div id="center-center" class="square text-cetered centered box-center">
+          <div class="player1 space" id="11">
+          </div>
+        </div>
+        <div id="center-right" class="square text-cetered centered box-right">
+          <div class="player1 space" id="12">
+          </div>
+        </div>
+        <!-- this is the bottom row of the board -->
+        <div id="bottom-left" class="square text-cetered centered box-left">
+          <div class="player1 space" id="20">
+          </div>
+        </div>
+        <div id="bottom-center" class="square text-cetered centered box-center">
+          <div class="player1 space" id="21">
+          </div>
+        </div>
+        <div id="bottom-right" class="square text-cetered centered box-right">
+          <div class="player1 space" id="22">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of the gameboard -->
+    <!-- setting up the score board -->
+    <div class="scoreboard-container">
+      <!-- player1 -->
+      <div class="player1-name-score-container name-score-container">
+        <div id = "player1" class="icon-box">
+          <img src="https://raw.githubusercontent.com/christkv/tic-tac-toe/master/public/img/cross.png">
+        </div>
+        <div class ="player1-score-container">
+          <div id="player1-score" class="score">5</div>
+        </div>
+      </div>
+      <!-- score -->
+        <div class="reset-score btn">
+          <div class= "btn-text">
+            <h3>Reset Score</h3>
+          </div>
+        </div>
+      </div>
+      <!-- player2 -->
+      <div class="player2-name-score-container name-score-container">
+          <div id = "player2" class="icon-box">
+            <img src="https://raw.githubusercontent.com/christkv/tic-tac-toe/master/public/img/circle.png">
+          </div>
+          <div class="player2-score-container">
+            <div id="player2-score" class="score">5</div>
+          </div>
+      </div>
+      <!-- restart game -->
+      <div class="restart btn">
+        <div class= "restart-btn-txt btn-text">
+          <h3>Restart</h3>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div id="pop-up-background-container">
+      <div id="pop-up-text-container">
+        <div id="pop-up-image"></div>
+        <div id="pop-up-message"></div>
+        <div id="pop-up-close"></div>
+      </div>
+    </div>
+    <div id="game-over-check"></div>
+  </main>
+</body>
+<script src="./assets/script.js"></script>
+</html>
