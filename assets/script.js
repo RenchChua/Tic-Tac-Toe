@@ -31,10 +31,10 @@ function closePopUpFunction(oops){
   closePopUp.addEventListener('click', function(){
     console.log(oops);
     popUpContainer.style.display = "none";
-    popUpText.style.left = "45%"
+    popUpText.style.left = "45%";
     popUpImage.innerHTML = "";
-  })
-  if(!oops){restart()};
+  });
+  if(!oops){restart();}
 
   // how to make it work such that restart activated only on restart button?
 }
@@ -46,7 +46,7 @@ function displayError(){
   var oops = true;
   popUpText.innerText = "TAKEN!!!";
   popUpText.style.left = "20%";
-  closePopUp.innerText = "OOPS..."
+  closePopUp.innerText = "OOPS...";
   showPopUp(oops);
 }
 
@@ -140,8 +140,8 @@ function onClick(element, turnsPlayed, rowNum, colNum){
       player1Score += 1;
       document.querySelector("#player1-score").innerHTML = player1Score;
       popUpImage.innerHTML = '<img src="https://raw.githubusercontent.com/christkv/tic-tac-toe/master/public/img/cross.png">';
-      popUpText.innerText = "WINS!"
-      closePopUp.innerText = "Restart"
+      popUpText.innerText = "WINS!";
+      closePopUp.innerText = "Restart";
       showPopUp();
       // need function to display win message rather than ugly alert and also to stop game and restart
     }
@@ -156,9 +156,9 @@ function onClick(element, turnsPlayed, rowNum, colNum){
     if(checkWin(board)){
       player2Score += 1;
       document.querySelector("#player2-score").innerHTML = player2Score;
-      popUpImage.innerHTML = '<img src="https://raw.githubusercontent.com/christkv/tic-tac-toe/master/public/img/circle.png">'
-      popUpText.innerText = "WINS!"
-      closePopUp.innerText = "Restart"
+      popUpImage.innerHTML = '<img src="https://raw.githubusercontent.com/christkv/tic-tac-toe/master/public/img/circle.png">';
+      popUpText.innerText = "WINS!";
+      closePopUp.innerText = "Restart";
       showPopUp();
       // need function to display win message rather than ugly alert and also to stop game and restart
     }
@@ -191,11 +191,11 @@ function boardClick(){
 function restart(){
   for(i = 0 ; i < spaceElements.length; i++){
     spaceElements[i].className = "player1 space";
-  };
+  }
   for(i = 0 ; i < spaceElements.length; i++){
     spaceElements[i].innerHTML = "";
-  };
-  board = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+  }
+  board = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
   turnsPlayed = 1;
   return board;
 }
@@ -214,7 +214,7 @@ function gameStart(){
   // listen to each cell
   for(i = 0; i < spaceElements.length; i++){
     // what happens on clicking a cell
-    spaceElements[i].addEventListener('click', boardClick)
+    spaceElements[i].addEventListener('click', boardClick);
   }
 
   restartButton.addEventListener('click', restart);
