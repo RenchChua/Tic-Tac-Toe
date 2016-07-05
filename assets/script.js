@@ -9,8 +9,6 @@ var restartButton = document.querySelector(".restart");
 // get reset
 var resetButton = document.querySelector(".reset-score");
 
-
-
 // set initial score
 var player1Score = 0;
 var player2Score = 0;
